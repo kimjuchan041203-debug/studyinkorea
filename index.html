@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study in Korea | for Ukrainians</title>
+    <style>
+        /* 기본 설정: 잡스의 폰트 디자인 */
+        body {
+            margin: 0;
+            font-family: -apple-system, system-ui, sans-serif;
+            color: #1d1d1f;
+            line-height: 1.5;
+            background-color: #fbfbfd;
+        }
+
+        /* 헤더 스타일: 로고 왼쪽, 메뉴 오른쪽 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px); /* 아이폰 같은 투명 효과 */
+            border-bottom: 1px solid #d2d2d7;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+        .logo-study { color: #0057B7; } /* 우크라이나 Blue */
+        .logo-korea { color: #FFB800; } /* 우크라이나 Yellow */
+
+        nav ul { display: flex; list-style: none; gap: 30px; margin: 0; padding: 0; }
+        nav a { text-decoration: none; color: #515154; font-size: 14px; font-weight: 500; }
+        nav a:hover { color: #0057B7; }
+
+        /* 메인 콘텐츠 영역 */
+        main { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+
+        .hero { text-align: center; margin-bottom: 80px; }
+        .hero h1 { font-size: 48px; font-weight: 700; margin-bottom: 15px; letter-spacing: -1.2px; }
+        .hero p { font-size: 20px; color: #86868b; max-width: 600px; margin: 0 auto; }
+
+        /* 실용적인 경로 선택 카드 (The Paths) */
+        .path-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 100px;
+        }
+
+        .path-card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            border: 1px solid #d2d2d7;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .path-card:hover { transform: translateY(-5px); border-color: #0057B7; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .path-card h3 { font-size: 22px; margin-bottom: 10px; }
+        .path-card p { font-size: 15px; color: #6e6e73; margin-bottom: 25px; min-height: 45px; }
+        .path-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0057B7;
+            color: #fff;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* 인터뷰 섹션 타이틀 */
+        .section-title { font-size: 32px; font-weight: 700; margin-bottom: 40px; text-align: center; }
+
+        /* 질문지 결과가 들어갈 자리 (Future Interview Section) */
+        .interview-container { display: grid; gap: 30px; }
+        .interview-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 18px;
+            border: 1px solid #d2d2d7;
+        }
+        .question { font-weight: 700; color: #0057B7; margin-bottom: 10px; font-size: 17px; }
+        .answer { color: #333; margin-bottom: 20px; line-height: 1.7; }
+        .profile { font-size: 14px; color: #86868b; border-top: 1px solid #f5f5f7; padding-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><span class="logo-study">Studyin</span><span class="logo-korea">Korea</span></div>
+        <nav>
+            <ul>
+                <li><a href="#paths">Courses</a></li>
+                <li><a href="#interviews">Interviews</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Your Future in Korea</h1>
+            <p>우크라이나 선배들이 직접 알려주는 한국 대학 생활과 유학의 모든 것</p>
+        </div>
+
+        <div class="path-grid" id="paths">
+            <div class="path-card">
+                <h3>어학당</h3>
+                <p>한국어 능력 시험(TOPIK) 준비와 대학 부설 어학당 입학 안내</p>
+                <a href="#" class="path-btn">Guide</a>
+            </div>
+            <div class="path-card">
+                <h3>학부 신입학</h3>
+                <p>한국의 일반 대학교 학사 과정 입학 및 장학금 정보</p>
+                <a href="#" class="path-btn">Undergrad</a>
+            </div>
+            <div class="path-card">
+                <h3>GKS 대학원</h3>
+                <p>석사·박사 장학생 선발 기준 및 연구계획서 작성 팁</p>
+                <a href="#" class="path-btn">Graduate</a>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="interviews">Voices of Experience</h2>
+        <div class="interview-container">
+            
+            <div class="interview-card">
+                <div class="question">Q. 한국 유학을 결정한 가장 큰 이유는 무엇인가요?</div>
+                <div class="answer">"답변 내용이 여기에 들어갑니다. 질문지를 보낸 후 받은 텍스트를 이곳에 복사해서 넣으시면 됩니다."</div>
+                <div class="profile">
+                    <strong>작성자:</strong> 올레나 (부산외국어대학교 석사 과정) | <strong>출신:</strong> Kyiv National Linguistic University
+                </div>
+            </div>
+
+            <div class="interview-card">
+                <div class="question">Q. 우크라이나 학생들에게 해주고 싶은 조언이 있다면?</div>
+                <div class="answer">"여기에 두 번째 답변 내용을 넣으세요. 나중에 데이터가 쌓이면 이 카드가 점점 늘어나게 될 것입니다."</div>
+                <div class="profile">
+                    <strong>작성자:</strong> 안드리 (한국 IT 기업 재직 중) | <strong>전공:</strong> 컴퓨터 공학
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
